@@ -33,7 +33,7 @@ public class TareaEntity {
 	private LocalDate fechaCreacion;
 	
 	@Column(name = "fecha_vencimiento")
-	private LocalDate fechaVencimineto;
+	private LocalDate fechaVencimiento;
 	
 	@Enumerated(value = EnumType.STRING)
 	private Estado estado;
