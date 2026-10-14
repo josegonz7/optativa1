@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:8080/tareas/pendientes
+method: GET
+order: 9000

@@ -17,7 +17,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class TareaService {
 
-private final TareaRepository tareaRepository;
+	private final TareaRepository tareaRepository;
 	
 	public List<TareaEntity> findAll() {
 		return this.tareaRepository.findAll();
@@ -38,7 +38,7 @@ private final TareaRepository tareaRepository;
 		if(tareaEntity.getEstado() != null) {
 			throw new TareaException("El estado no se puede modificar. ");
 		}
-		if(tareaEntity.getFechaVencimiento().isBefore(LocalDate.now())) {
+		if(tareaEntity.getFechaVencimiento() == null || tareaEntity.getFechaVencimiento().isBefore(LocalDate.now())) {
 			throw new TareaException("La fecha de vencimiento debe ser posterior a la fecha de creación.");
 		}
 		
@@ -63,11 +63,13 @@ private final TareaRepository tareaRepository;
 		if(tareaEntity.getEstado() != null) {
 			throw new TareaException("El estado no se puede modificar. ");
 		}
-		if(tareaEntity.getFechaVencimiento().isBefore(LocalDate.now())) {
-			throw new TareaException("La fecha de vencimiento debe ser posterior a la fecha de creación.");
-		}
 		
 		TareaEntity tareaBD = this.findById(idTarea);
+		
+		// La fecha de vencimiento debe ser posterior a la fecha de creación de la tarea
+		if(tareaEntity.getFechaVencimiento() == null || tareaEntity.getFechaVencimiento().isBefore(tareaBD.getFechaCreacion())) {
+			throw new TareaException("La fecha de vencimiento debe ser posterior a la fecha de creación.");
+		}
 		
 		tareaBD.setTitulo(tareaEntity.getTitulo());
 		tareaBD.setDescripcion(tareaEntity.getDescripcion());
@@ -85,20 +87,43 @@ private final TareaRepository tareaRepository;
 	}
 
 	public TareaEntity iniciar(long idTarea) {
-		//Aquí traigo la tarea de la BD y compruebo que el ID exista
+		// Aquí traigo la tarea de la BD y compruebo que el ID exista
 		TareaEntity tarea = this.findById(idTarea);
 		
 		if(!tarea.getEstado().equals(Estado.PENDIENTE)) {
 			throw new TareaException("No se puede iniciar una tarea en progreso o completada");
 		}
-				
 		
 		tarea.setEstado(Estado.EN_PROGRESO);
 		return this.tareaRepository.save(tarea);
 	}
+
+	public TareaEntity completar(long idTarea) {
+		// Traigo la tarea de la BD y compruebo que el ID exista
+		TareaEntity tarea = this.findById(idTarea);
+		
+		if(!tarea.getEstado().equals(Estado.EN_PROGRESO)) {
+			throw new TareaException("Solo se pueden completar tareas EN_PROGRESO");
+		}
+		
+		tarea.setEstado(Estado.COMPLETADA);
+		return this.tareaRepository.save(tarea);
+	}
+
+	public List<TareaEntity> findByEstado(Estado estado) {
+		return this.tareaRepository.findByEstado(estado);
+	}
 	
-	public List<TareaEntity> getVencidas(){
+	public List<TareaEntity> getVencidas() {
 		return this.tareaRepository.findByFechaVencimientoBefore(LocalDate.now());
+	}
+
+	public List<TareaEntity> getNoVencidas() {
+		return this.tareaRepository.findByFechaVencimientoAfter(LocalDate.now());
+	}
+
+	public List<TareaEntity> findByTitulo(String cadena) {
+		return this.tareaRepository.findByTituloContaining(cadena);
 	}
 	
 }

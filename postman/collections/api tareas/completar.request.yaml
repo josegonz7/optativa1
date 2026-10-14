@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:8080/tareas/7/completar
+method: PUT
+order: 7000

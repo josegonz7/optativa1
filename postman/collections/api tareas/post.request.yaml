@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://localhost:8080/tareas
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"titulo\": \"Nueva tarea DAW\",\r
+
+    \  \"descripcion\": \"Descripción detallada de la tarea\",\r
+
+    \  \"fechaVencimiento\": \"2026-12-31\"\r
+
+    }"
+order: 3000

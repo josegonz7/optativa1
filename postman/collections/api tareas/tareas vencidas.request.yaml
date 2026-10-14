@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:8080/tareas/vencidas
+method: GET
+order: 11000

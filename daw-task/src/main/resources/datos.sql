@@ -1,7 +1,7 @@
 INSERT INTO tarea (titulo, descripcion, fecha_creacion, fecha_vencimiento, estado) VALUES
-('Configurar Spring Security', 'Implementar autenticación y autorización mediante JWT', '2026-09-01', '2026-09-10', 'COmPLETADA'),
-('Diseñar esquema de base de datos', 'Definir tablas, claves foráneas e índices en MariaDB', '2026-09-03', '2026-09-12', 'COmPLETADA'),
-('Desarrollar controladores REST', 'Crear endpoints CRUD para la gestión de entidades', '2026-09-08', '2026-09-18', 'COmPLETADA'),
+('Configurar Spring Security', 'Implementar autenticación y autorización mediante JWT', '2026-09-01', '2026-09-10', 'COMPLETADA'),
+('Diseñar esquema de base de datos', 'Definir tablas, claves foráneas e índices en MariaDB', '2026-09-03', '2026-09-12', 'COMPLETADA'),
+('Desarrollar controladores REST', 'Crear endpoints CRUD para la gestión de entidades', '2026-09-08', '2026-09-18', 'COMPLETADA'),
 ('Implementar capa de servicios', 'Añadir lógica de negocio y validación de DTOs con Bean Validation', '2026-09-15', '2026-09-28', 'EN_PROGRESO'),
 ('Configurar manejo global de excepciones', 'Crear clase con @ControllerAdvice para respuestas de error homogéneas', '2026-09-18', '2026-10-02', 'EN_PROGRESO'),
 ('Escribir tests unitarios', 'Desarrollar pruebas con JUnit 5 y Mockito para servicios y repositorios', '2026-09-22', '2026-10-05', 'EN_PROGRESO'),

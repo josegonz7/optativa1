@@ -20,10 +20,10 @@
         <div class="container navbar-content">
             <div class="brand">
                 <span class="brand-icon">⚡</span>
-                <h1>DAW Full-Stack App</h1>
+                <h1>daw-task</h1>
             </div>
             <!-- [ALUMNO] Añadir aquí los botones de acción principal si es necesario -->
-            <button id="btn-nuevo" class="btn btn-primary">+ Nuevo Registro</button>
+            <button id="btn-nuevo" class="btn btn-primary">+ Nueva tarea</button>
         </div>
     </header>
 
@@ -45,7 +45,7 @@
         <!-- [ALUMNO] TABLA / LISTADO DE DATOS -->
         <section class="card">
             <div class="card-header">
-                <h2>Listado de Entidades</h2>
+                <h2>Listado de Tareas</h2>
                 <button id="btn-recargar" class="btn btn-secondary btn-sm">🔄 Recargar</button>
             </div>
             
@@ -75,7 +75,7 @@
             </div>
             
             <div id="empty-state" class="state-placeholder hidden">
-                <p>No hay tareas disponibles.</p>
+                <p>No hay registros disponibles.</p>
             </div>
         </section>
 
@@ -87,26 +87,26 @@
     <div id="modal-form" class="modal-overlay hidden">
         <div class="modal-card">
             <div class="modal-header">
-                <h3 id="modal-form-titulo">Nuevo tarea</h3>
+                <h3 id="modal-form-titulo">Nueva tarea</h3>
                 <button id="btn-cerrar-form" class="btn-icon-close">&times;</button>
             </div>
             <form id="form-entidad">
                 <div class="modal-body">
 
                     <!-- Campo oculto para ID (necesario en el modo Edición) -->
-                    <input type="hidden" id="id-tarea">
+                    <input type="hidden" id="tarea-id">
 
                     <!-- [ALUMNO] Campos del formulario según la entidad -->
 
                     <!-- TEXTO CORTO -->
                     <div class="form-group">
-                        <label for="campo-texto">Titulo<span class="req">*</span></label>
-                        <input type="text" id="tarea-titulo" required placeholder="Ingrese el titulo...">
+                        <label for="tarea-titulo">Título <span class="req">*</span></label>
+                        <input type="text" id="tarea-titulo" required placeholder="Ingrese el título...">
                     </div>
 
                     <!-- TEXTO LARGO -->
                     <div class="form-group">
-                        <label for="tarea-descripcion">Descripcion</label>
+                        <label for="tarea-descripcion">Descripción</label>
                         <textarea id="tarea-descripcion" rows="3" placeholder="Ingrese descripción..."></textarea>
                     </div>
 
@@ -114,11 +114,13 @@
 
                         <!-- FECHA -->
                         <div class="form-group">
-                            <label for="fecha-vencimiento">Fecha de vencimiento<span class="req">*</span></label>
-                            <input type="date" id="fecha-vencimiento" required>
+                            <label for="tarea-fecha-vencimiento">Fecha de vencimiento<span class="req">*</span></label>
+                            <input type="date" id="tarea-fecha-vencimiento" required>
                         </div>
 
-                        <!-- SELECT / ENUM -->
+                    </div>
+                    
+                    <!-- SELECT / ENUM -->
                         <!-- <div class="form-group">
                             <label for="campo-select">Estado (Enum)</label>
                             <select id="campo-select">
@@ -127,8 +129,6 @@
                                 <option value="OPCION_3">OPCION_3</option>
                             </select>
                         </div> -->
-
-                    </div>
 
                     <!-- NUMÉRICO (descomenta si lo necesitas) -->
                     <!--

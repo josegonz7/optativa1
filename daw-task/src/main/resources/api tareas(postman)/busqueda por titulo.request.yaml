@@ -1,0 +1,6 @@
+$kind: http-request
+url: http://localhost:8080/tareas/titulo?titulo=DAW
+method: GET
+queryParams:
+  titulo: DAW
+order: 13000

@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://localhost:8080/tareas/no_vencidas
+method: GET
+order: 12000
