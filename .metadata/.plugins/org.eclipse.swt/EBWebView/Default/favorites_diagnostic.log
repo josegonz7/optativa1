@@ -124,3 +124,32 @@
 2026-10-07 07:00:44.451: [INFO] BookmarksLoadDropped droppedNodes=0
 2026-10-07 07:00:44.451: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
 2026-10-07 08:23:41.027: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-13 10:55:15.966: [INFO] CurrentProfilePath: C:\Users\joseg\OneDrive\Desktop\OPTATIVA\optativa1\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-13 10:55:15.966: [INFO] Profiles total count: 1
+2026-10-13 10:55:15.966: [INFO] Profile: name=Perfil 1 path=C:\Users\joseg\OneDrive\Desktop\OPTATIVA\optativa1\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-07T07:21:43.289Z
+2026-10-13 10:55:15.966: [INFO] LastUsedProfileDir: C:\Users\joseg\OneDrive\Desktop\OPTATIVA\optativa1\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-13 10:55:15.966: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\joseg\OneDrive\Desktop\OPTATIVA\optativa1\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-07T07:21:43.289Z
+2026-10-13 10:55:15.966: [INFO] OnDoneLoading sync enabled: 0
+2026-10-13 10:55:15.966: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-13 10:55:15.966: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-13 10:55:15.966: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-13 11:09:24.184: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-13 11:09:50.365: [INFO] CurrentProfilePath: C:\Users\joseg\OneDrive\Desktop\OPTATIVA\optativa1\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-13 11:09:50.365: [INFO] Profiles total count: 1
+2026-10-13 11:09:50.365: [INFO] Profile: name=Perfil 1 path=C:\Users\joseg\OneDrive\Desktop\OPTATIVA\optativa1\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-13T10:56:41.080Z
+2026-10-13 11:09:50.365: [INFO] LastUsedProfileDir: C:\Users\joseg\OneDrive\Desktop\OPTATIVA\optativa1\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-13 11:09:50.365: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\joseg\OneDrive\Desktop\OPTATIVA\optativa1\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-13T10:56:41.080Z
+2026-10-13 11:09:50.365: [INFO] OnDoneLoading sync enabled: 0
+2026-10-13 11:09:50.365: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-13 11:09:50.365: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-13 11:09:50.365: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-13 11:53:28.785: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-14 07:22:24.449: [INFO] CurrentProfilePath: C:\Users\joseg\OneDrive\Desktop\OPTATIVA\optativa1\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-14 07:22:24.449: [INFO] Profiles total count: 1
+2026-10-14 07:22:24.449: [INFO] Profile: name=Perfil 1 path=C:\Users\joseg\OneDrive\Desktop\OPTATIVA\optativa1\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-13T11:10:55.651Z
+2026-10-14 07:22:24.449: [INFO] LastUsedProfileDir: C:\Users\joseg\OneDrive\Desktop\OPTATIVA\optativa1\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-14 07:22:24.449: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\joseg\OneDrive\Desktop\OPTATIVA\optativa1\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-13T11:10:55.651Z
+2026-10-14 07:22:24.449: [INFO] OnDoneLoading sync enabled: 0
+2026-10-14 07:22:24.449: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-14 07:22:24.449: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-14 07:22:24.449: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
